@@ -1,0 +1,85 @@
+/* ****-------****** SECTION 4****-------****** */
+.section4 {
+    display: flex;
+    background-color: var(--white);
+    background-image: url(/assets/img/G10.jpg);
+    background-size: 65% auto;
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+    padding: 15rem 0 0;
+}
+
+.s4-commentContainer {
+    background-color: var(--ocre);
+    overflow: hidden;
+    width: 50%;
+    height: 101.2rem;
+    padding: 13.4rem 6.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.s4-title {
+    color: var(--marfil);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.comments {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.comment {
+    padding: 2rem;
+}
+
+.comment-text {
+    color: var(--marfil);
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 2.7rem;
+}
+
+.stars {
+    font-size: 2.4rem ;
+    margin-top: 1.5rem;
+}
+
+.comment-author {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--marfil);
+    margin-top: 1.5rem;
+    color: var(--dark-purple);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--lavanda);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: var(--black);
+    width: 10px;
+    height: 10px;
+  }
+
+.s4-rightSide {
+    width: 50%;
+}
