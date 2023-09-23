@@ -1,0 +1,57 @@
+/* ****-------****** SECTION 2****-------****** */
+.section2 {
+    background-image: url(/assets/img/bg-sky-1.jpg);
+    padding: 15rem 13.4rem 22rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.section2 .lazo {
+    position: absolute;
+    left: 0;
+    bottom: -20.6rem;
+    
+}
+
+.coreValues {
+    padding: 2.7rem auto;
+    color: var(--dark-purple);
+}
+
+.s2-title {
+
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.s2-description {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    padding: 3.6rem 13.5rem;
+}
+
+.coreValues-icons {
+    display: flex;
+    padding: 2.7rem 3.7rem 0;
+    justify-content: space-between;
+}
+
+.coreValues-icons div{
+    display: flex;
+    flex-direction: column;
+}
+
+.coreValues-icons span {
+    color: var(--ocre);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2.6rem;
+}
