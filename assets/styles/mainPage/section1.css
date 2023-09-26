@@ -117,6 +117,7 @@
         flex-direction: column;
         padding: 3rem;
         align-items: start;
+        margin-bottom: 2.3rem;
     }
     .section1-element2 p {
         font-size: 3.5rem;
@@ -139,18 +140,16 @@
     }
 }
 
-
-/**** SERVICES ****/
-.s1-services-title {
+/**** ELEMENT 3 - SERVICES ****/
+.s1-element3-title {
     display: flex;
     align-items: center;
 }
 
-.s1-services-title h2 {
+.s1-element3-title h2 {
     color: var(--marfil);
     font-size: 4.5rem;
     font-weight: 700;
-    line-height: 4.5rem;
     margin: auto 2rem;
 }
 
@@ -158,15 +157,16 @@
     height: 0.2rem;
     width: 100%;
     background-color: var(--ocre);
+    padding: 0;
 }
 
-.s1-services-description {
-    margin-top: 3.6rem;
+.s1-element3-description {
+    margin-top: 3rem;
     text-align: center;
     padding: 2.7rem 0;
 }
 
-.s1-services-description h3 {
+.s1-element3-description h3 {
     color: var(--lavanda);
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -174,7 +174,7 @@
     line-height: 4.2rem;
 }
 
-.s1-services-description p {
+.s1-element3-description p {
     color: var(--marfil);
     font-size: 2rem;
     font-weight: 300;
@@ -182,8 +182,14 @@
     padding: 3.6rem 0;
 }
 
+@media (max-width: 980px) {
+    .s1-element3-title h2 {
+        font-size: 3rem;
+    }
+}
+
 /** CARDS **/
-.s1-services-largeCards, .s1-services-smallCards {
+.s1-element3-largeCards, .s1-element3-smallCards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
