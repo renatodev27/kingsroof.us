@@ -1,0 +1,319 @@
+@import "../style.css";
+
+/* ****-------****** SECTION 1****-------****** */
+.section1 {
+    background-color: var(--dark-purple);
+    padding-bottom: 10rem;
+}
+
+@media (max-width: 980px) {
+    .section1 {
+        padding: 10rem 0 ;
+    }
+}
+
+.s1-container {
+    margin: 0 10%;
+}
+
+/**** Element 1 ****/
+.s1-e1-boxes {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    width: 50%;
+    height: 18.3rem;
+    display: flex;
+    justify-content: center;
+    color: var(--marfil);
+    align-items: center;
+    padding: 4rem 0 6rem;
+    gap: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    transition: border 200ms ease 0ms;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-bottom: 3px solid var(--ocre);
+}
+
+.box img {
+    width: 8rem;
+    height: 8rem;
+} 
+
+.s1-e1-multifamily {
+    background-color: var(--light-purple);
+}
+
+.s1-e1-commercial {
+    background-color: var(--purple);
+}
+
+@media (max-width: 980px) {
+    .s1-element1 {
+        padding: 3rem;
+        background-color: var(--purple);
+    }
+    .s1-e1-boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .box {
+        width: 100% !important;
+    }
+}
+@media (max-width: 767px) {
+    .s1-element1 {
+        padding: 0;
+    }
+    .box {
+        height: 11.2rem;
+        padding: 2rem 0 3rem;
+        font-size: 2rem;
+    }
+    .box img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+
+/**** Element 2 ****/
+.section1-element2 {
+    background-color: var(--purple);
+    margin: 8rem 0;
+    display: flex;
+    padding: 8rem;
+    align-items: center;
+}
+
+.section1-element2 p {
+    width: 67%;
+    color: var(--marfil);
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 7.7rem;
+    text-align: left;
+}
+
+.s1-e2-btn {
+    width: 33%;
+    margin: 12.3rem 0;
+}
+
+@media (max-width: 1233px) {
+    .s1-e2-btn {
+        padding: 1.5rem 5rem ;
+    }
+}
+@media (max-width: 980px) {
+    .section1-element2 {
+        flex-direction: column;
+        padding: 3rem;
+        align-items: start;
+        margin-bottom: 2.3rem;
+    }
+    .section1-element2 p {
+        font-size: 3.5rem;
+        line-height: 3.7rem;
+        width: 100%;
+    }
+    .s1-e2-btn {
+        margin: 3rem 0 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 767px) {
+    .section1-element2 {
+        padding: 2rem;
+    }
+    .section1-element2 p {
+        font-size: 3rem;
+        line-height: 3.3rem;
+    }
+}
+
+/**** ELEMENT 3 - SERVICES ****/
+.s1-element3-title {
+    display: flex;
+    align-items: center;
+}
+
+.s1-element3-title h2 {
+    color: var(--marfil);
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: auto 2rem;
+}
+
+.line {
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--ocre);
+    padding: 0;
+}
+
+.s1-element3-description {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2.7rem 0;
+}
+
+.s1-element3-description h3 {
+    color: var(--lavanda);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.2rem;
+}
+
+.s1-element3-description p {
+    color: var(--marfil);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+    padding: 3.6rem 0;
+}
+
+@media (max-width: 980px) {
+    .s1-element3-title h2 {
+        font-size: 3rem;
+    }
+}
+
+/** CARDS **/
+.s1-element3-largeCards, .s1-element3-smallCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.largeCard, .smallCard {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 0 3rem;
+    justify-content: flex-end;
+    background-color: var(--white);
+    align-items: center;
+}
+
+.card-content {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 12rem;
+    height: 12rem;
+}
+
+.card-title {
+    color: var(--dark-purple);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+}
+
+.card-description {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    text-align: center;
+    margin-top: 0.7rem;
+}
+
+.card-btn {
+    width: 18.2rem;
+    height: 4.4rem;
+    background: var(--ocre);
+    border: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    border-radius: 25px;
+    line-height: 2.4rem;
+    padding: 1rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.6rem;
+}
+
+.card-btn:hover {
+    background: var(--lavanda);
+}
+
+.roof:hover, .renovation:hover, .painting:hover, .insurance:hover, .fenceDecks:hover, .concrete:hover, .solarPanels:hover, .kingClean:hover,.softWash:hover {
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.largeCard:hover .card-img, .smallCard:hover .card-img {
+    filter: brightness(0) invert(1); /* Invert the image color to white on hover */
+}
+
+.largeCard:hover .card-title,
+.largeCard:hover .card-description, .smallCard:hover .card-title,
+.smallCard:hover .card-description {
+    color: white; /* Change text color to white on hover */
+}
+
+/* LARGE CARD */
+.largeCard {
+    width: 19rem;
+    height: 43.9rem;
+}
+
+.largeCard .card-content .card-description {
+    height: 14.7rem;
+}
+
+.roof:hover {
+    background-image: url(/assets/img/bg-roof-3.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.renovation:hover {
+    background-image: url(/assets/img/bg-Renovation.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.painting:hover {
+    background-image: url(/assets/img/bg-Painting.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.insurance:hover {
+    background-image: url(/assets/img/bg-Insurance-Experts.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.fenceDecks:hover {
+    background-image: url(/assets/img/bg-Fence-Decks.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+
+/* SMALL CARD */
+.smallCard {
+    position: relative;
+    height: 38.1rem;
+    width: 23.4rem;
+    margin-top: 3.6rem;
+    padding-top: 3rem;
+}
+
+.concrete:hover {
+    background-image: url(/assets/img/bg-Concrete.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.solarPanels:hover {
+    background-image: url(/assets/img/bg-Solar-panels.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.kingClean:hover {
+    background-image: url(/assets/img/bg-King-Clean.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
+.softWash:hover {
+    background-image: url(/assets/img/bg-Soft-wash.jpg),linear-gradient(180deg,rgba(47,13,49,0.5) 0%,rgba(47,13,49,0.5) 100%);
+}
