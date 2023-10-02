@@ -188,33 +188,42 @@
     }
 }
 
-/** CARDS **/
-.s1-element3-largeCards, .s1-element3-smallCards {
+/**** ELEMENT 4 - CARDS ****/
+.s1-element4-largeCards, .s1-element4-smallCards {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 3%;
+}
+
+.s1-element4-smallCards {
+    justify-content: center;
+    margin-top: 3.6rem;
 }
 
 .largeCard, .smallCard {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 0 0 3rem;
+    padding: 3rem 0;
     justify-content: flex-end;
     background-color: var(--white);
     align-items: center;
+    transition: background-color 300ms ease 0ms,background-image 300ms ease 0ms;
 }
 
 .card-content {
     padding: 0 2rem;
+    margin: 0 0 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .card-img {
     width: 12rem;
     height: 12rem;
+    margin-bottom: 0.8rem;
 }
 
 .card-title {
@@ -223,21 +232,20 @@
     font-weight: 700;
     line-height: 1.7rem;
     text-transform: uppercase;
-    margin-top: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .card-description {
     color: var(--grey);
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2.1rem;
     text-align: center;
-    margin-top: 0.7rem;
 }
 
 .card-btn {
-    width: 18.2rem;
-    height: 4.4rem;
+    /* width: 18.2rem;
+    height: 4.4rem; */
     background: var(--ocre);
     border: none;
     color: var(--white);
@@ -246,11 +254,53 @@
     line-height: 2.4rem;
     padding: 1rem 3rem;
     font-family: 'Poppins', sans-serif;
-    margin-top: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .card-btn:hover {
     background: var(--lavanda);
+}
+
+@media (max-width: 1311px) {
+    .card-btn {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width: 1074px) {
+    .card-btn {
+        padding: 1rem 3rem;
+    }
+    .card-img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .s1-element4-largeCards, .s1-element4-smallCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5.5%;
+        row-gap: 3%;
+    }
+
+    .s1-element4-smallCards {
+        margin-top: 9.6rem !important;
+        row-gap: 5%;
+    }
+
+    .largeCard, .smallCard {
+        width: 100% !important;
+        height: 35.4rem !important;
+    }
+    .card-img {
+        width: 12rem;
+        height: 12rem;
+    }
 }
 
 .roof:hover, .renovation:hover, .painting:hover, .insurance:hover, .fenceDecks:hover, .concrete:hover, .solarPanels:hover, .kingClean:hover,.softWash:hover {
@@ -272,12 +322,11 @@
 
 /* LARGE CARD */
 .largeCard {
-    width: 19rem;
-    height: 43.9rem;
+    width: 17.6%;
 }
 
 .largeCard .card-content .card-description {
-    height: 14.7rem;
+    height: auto;
 }
 
 .roof:hover {
@@ -301,8 +350,8 @@
     position: relative;
     height: 38.1rem;
     width: 23.4rem;
-    margin-top: 3.6rem;
     padding-top: 3rem;
+    box-sizing: content-box;
 }
 
 .concrete:hover {
