@@ -18,6 +18,7 @@
     --grey: #666;
     --light-blue: #82c0c7;
     --black: #000000;
+    --pale: #e5e5e5;
 }
 
 /* Configuración general */
@@ -41,4 +42,5 @@ body {
 .container {
     max-width: 192rem;
     margin: 0 auto;
+    border: 1px solid red;
 }

@@ -1,16 +1,20 @@
+@import "../style.css";
+
 /* ****-------****** SECTION 3****-------****** */
 .section3 {
     background-color: var(--dark-purple);
     display: flex;
-    padding: 20.6rem 13.5rem 8rem;
-
+    padding: 20.6rem 10% 8rem;
 }
+
+
 
 .s3-explore {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 38.2%;
     padding-top: 2.7rem;
+    margin-right: 3%;
 }
 
 .explore-title {
@@ -36,6 +40,7 @@
     font-family: 'Poppins', sans-serif;
     transition: 0.3s;
     display: inline-block;
+    animation-duration: .2s;
 }
 
 .s3-explore button:hover {
@@ -43,28 +48,63 @@
     border: 2px solid var(--ocre);
 }
 
-.s3-explore img {
-    width: 41.2rem;
+.s3-explore-img {
+    width: 100%;
+}
+
+.s3-explore-img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .s3-images {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 3.2rem;
-
-
+    width: 58.8%;;
 }
 .explore-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.2rem;
+    gap: 5%;
 }
 
 .explore-img img {
     width: 100%;
 }
 
+.explore-img > div {
+    position: relative;
+}
+
+.s3-img-overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: hsla(0,0%,100%,.9);
+    pointer-events: none;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.explore-img > div:hover .s3-img-overlay {
+    z-index: 3;
+    opacity: 1;
+    transition: all .5s; /*revisar transicion*/
+}
+
+.s3-img-overlay::before {
+    content: url(/assets/icons/icons8-plus-30.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
 .s3-explore-pages {
     border-top: 2px solid var(--marfil);
     margin-top: 3.3rem;
@@ -87,4 +127,38 @@
 .s3-hover:hover {
     background: hsla(0,0%,100%,.9);
     z-index: 1;
+}
+
+@media (max-width: 980px) {
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .s3-explore {
+        width: 100% !important;
+        align-items: center;
+    }
+    .explore-title {
+        align-self: flex-start;
+        font-size: 3.5rem !important;
+        margin-bottom: 0;
+    }
+    .s3-explore button {
+        margin-top: 2.8rem;
+    }
+    .s3-explore-img {
+        text-align: center;
+    }
+    .s3-images {
+        width: 100%;
+        padding-top: 18rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .explore-img {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2.5rem;
+    }
 }
