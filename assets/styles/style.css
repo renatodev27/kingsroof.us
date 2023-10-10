@@ -42,5 +42,5 @@ body {
 .container {
     max-width: 192rem;
     margin: 0 auto;
-    border: 1px solid red;
+    border-right: 1px solid red;
 }
