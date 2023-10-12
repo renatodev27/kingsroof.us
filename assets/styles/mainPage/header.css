@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50%;
+    box-sizing: border-box;
     
 }
 
@@ -377,7 +378,8 @@
 .contact-btn a {
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
+    color: var(--dark-purple);
 }
 
 .contact-btn:hover {
@@ -402,6 +404,7 @@
         position: absolute;
         top: -3.5rem;
         width: 100%;
+        left: 0;
     }
     .redes ul {
         flex-direction: row;
@@ -448,7 +451,7 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     bottom: 0;
     top: 25.2rem;

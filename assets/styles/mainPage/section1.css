@@ -27,7 +27,6 @@
     height: 18.3rem;
     display: flex;
     justify-content: center;
-    color: var(--marfil);
     align-items: center;
     padding: 4rem 0 6rem;
     gap: 1.5rem;
@@ -40,6 +39,18 @@
 
 .box:hover {
     border-bottom: 3px solid var(--ocre);
+}
+
+.box a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: var(--marfil);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .box img {
@@ -102,8 +113,11 @@
     text-align: left;
 }
 
+.section1-element2 a {
+    width: auto;
+}
+
 .s1-e2-btn {
-    width: 33%;
     margin: 12.3rem 0;
 }
 

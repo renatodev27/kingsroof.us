@@ -26,10 +26,13 @@
     text-transform: uppercase;
 }
 
-.s3-explore button {
+.s3-explore a {
+    margin-top: 3.2rem;
+}
+
+.s3-explore a button {
     width: 19.5rem;
     height: 5.1rem;
-    margin-top: 3.2rem;
     background: none;
     border: 2px solid var(--marfil);
     color: var(--marfil);
@@ -143,7 +146,7 @@
         font-size: 3.5rem !important;
         margin-bottom: 0;
     }
-    .s3-explore button {
+    .s3-explore a button {
         margin-top: 2.8rem;
     }
     .s3-explore-img {
