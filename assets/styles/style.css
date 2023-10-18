@@ -39,8 +39,13 @@ body {
     background-color: var(--dark-purple);
 }
 
+div {
+    animation-timing-function: linear;
+    animation-duration: .2s;
+}
+
 .container {
     max-width: 192rem;
     margin: 0 auto;
-    border: 1px solid red;
+    border-right: 1px solid red;
 }
