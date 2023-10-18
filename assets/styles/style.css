@@ -23,14 +23,14 @@
 
 /* Configuración general */
 html {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-size: 62.5%;  /* Establece el tamaño de fuente base en 10px */
 }
 
 *, *:before, *:after {
     margin:  0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
@@ -47,5 +47,5 @@ div {
 .container {
     max-width: 192rem;
     margin: 0 auto;
-    border-right: 1px solid red;
+    border-right: 2px solid royalblue;
 }
