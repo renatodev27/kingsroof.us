@@ -1,0 +1,49 @@
+@import '../style.css';
+
+/* ****-------****** TRUSTED PARTNERS ****-------****** */
+.trusted-partners {
+    background-color: var(--white-purple);
+}
+
+.trusted-partners h1 {
+    color: var(--dark-purple);
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.trusted-partners .trusted-partners-logos {
+    display: flex;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.trusted-partners .trusted-partners-logos .container {
+    width: 100%;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.trusted-partners-content {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.trusted-partners .trusted-partners-logos .container:first-child { background-image: url('../../img/partners/01-davinci.png') }
+.trusted-partners .trusted-partners-logos .container:nth-child(2) { background-image: url('../../img/partners/02-iko.png') }
+.trusted-partners .trusted-partners-logos .container:nth-child(3) { background-image: url('../../img/partners/03-certificated.png') }
+.trusted-partners .trusted-partners-logos .container:nth-child(4) { background-image: url('../../img/partners/04-srs.png') }
+.trusted-partners .trusted-partners-logos .container:nth-child(5) { background-image: url('../../img/partners/05-certainted.png') }
+.trusted-partners .trusted-partners-logos .container:nth-child(6) { background-image: url('../../img/partners/06-owens.png') }
+.trusted-partners .trusted-partners-logos .container:last-child { background-image: url('../../img/partners/07-gaf.png') }
