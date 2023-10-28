@@ -169,6 +169,9 @@
 }
 
 @media (max-width: 767px) {
+    .section4 {
+        padding-bottom: 0;
+    }
     .s4-commentContainer { 
         padding: 10% 5% 20%;
         height: 79.9rem;
