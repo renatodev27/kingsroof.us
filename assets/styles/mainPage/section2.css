@@ -8,10 +8,14 @@
     position: relative;
 }
 
-.section2 .lazo {
-    position: absolute;
-    left: 0;
-    bottom: -20.6rem;
+.s2-lazo {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: -150px;
+    position: relative;
+}
+.s2-lazo .lazo {
     max-width: 100%;
 }
 
