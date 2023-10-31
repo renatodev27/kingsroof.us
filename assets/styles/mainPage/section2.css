@@ -60,6 +60,20 @@
     margin-top: 2.6rem;
 }
 
+
+@media all and (max-width: 318px) {
+    .coreValues-icons {
+        display: flex !important;
+        flex-direction: column;
+        row-gap: 3rem !important;
+    }
+    .coreValues-icons>div {
+        align-items: center;
+    }
+    .coreValues-icons span {
+        margin-top: 2.2rem;
+    }
+}
 @media (max-width: 980px) {
     .coreValues {
         padding: 3rem 30%;        
