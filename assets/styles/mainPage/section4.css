@@ -82,7 +82,7 @@
     display: flex;    
     width: 100%;
 }
-
+ 
 .swiper-prev, .swiper-next {
     position: absolute;
     visibility: hidden;
