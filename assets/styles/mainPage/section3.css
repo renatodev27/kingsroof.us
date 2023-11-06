@@ -98,7 +98,7 @@
 }
 .s3-explore-pages {
     border-top: 2px solid var(--marfil);
-    margin-top: 3.3rem;
+    margin-top: 3.8rem;
     text-align: end;
     padding: 1rem;
 }
@@ -127,7 +127,8 @@
     }
     .explore-title {
         align-self: flex-start;
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
+        line-height: 4.3rem;
         margin-bottom: 0;
     }
     .s3-explore a {
@@ -143,17 +144,17 @@
         width: 100%;
         padding-top: 18rem;
     }
-    
+    .s3-explore-pages {
+        border-top: 1px solid var(--marfil);
+    }
 }
 
 @media (max-width: 479px) {
-    .explore-title {
-        font-size: 3.5rem !important;
-        line-height: 4.3rem;
-    }
+
     .explore-img {
         display: flex;
         flex-direction: column;
+        gap: normal;
     }
     .explore-img > div {
         /* position: relative; */
