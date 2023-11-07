@@ -71,7 +71,7 @@
         padding: 0;
         background-size: cover;
         /* background-position: 50% 2%; */
-        height: 165.85vh;
+        height: 109.8rem;
     }
     .right-bg-top {
         width: 23.42%;
@@ -107,7 +107,6 @@
     margin-right: 0;
     width: 76%;
     position: relative;
-    background-image: linear-gradient(180deg,rgba(47,13,49,0.49) 0%,rgba(47,13,49,0) 100%);
     background-color: rgba(255,255,255,0);
 }
 .logo  {
@@ -217,6 +216,7 @@
         padding: 2rem;
         position: absolute;
         top: -2.4rem;
+        background-image: linear-gradient(180deg,rgba(47,13,49,0.49) 0%,rgba(47,13,49,0) 100%);
     }
 }
 @media (min-width: 319px) and (max-width: 767px) {
@@ -242,7 +242,7 @@
         align-items: center;
         width: 100%;
         margin-top: 0;
-        /* padding-left: 0; */
+        padding-left: 0;
     }
     .logo {
         padding-bottom: 0;
