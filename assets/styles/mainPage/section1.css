@@ -156,6 +156,7 @@
 .s1-element3-title {
     display: flex;
     align-items: center;
+    margin: 8rem 0 6px;
 }
 .s1-element3-title h2 {
     color: var(--marfil);

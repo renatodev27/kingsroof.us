@@ -53,3 +53,8 @@ div {
     max-width: 192rem;
     margin: 0 auto;
 }
+
+img {
+    max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto original de la imagen */
+}
