@@ -57,3 +57,8 @@ div {
     margin: 0 auto;
     /* border-right: 2px solid royalblue; */
 }
+
+img {
+    max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto original de la imagen */
+}

@@ -131,6 +131,7 @@
     margin-bottom: -1rem;
 }
 
+<<<<<<< HEAD
 @media (min-width: 1453px) {
     .logo { /* EDITED */
         position: relative;
@@ -205,3 +206,86 @@
         margin: 0;
     }
 }
+=======
+/* ****-------****** FOOTER ****-------****** */
+footer.footer {
+    top: 100%;
+    width: 100%;
+    height: 20rem;
+    bottom: 0;
+}
+
+footer.footer .footer-upper {
+    background-color: #2f0d31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 15rem 12rem;
+}
+
+footer.footer .footer-upper .logo-content {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    margin-top: -3rem;
+    width: 30rem;
+}
+
+footer.footer .footer-upper .phone-content,
+footer.footer .footer-upper .address-content {
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    align-items: start;
+}
+
+footer.footer .footer-upper {
+    width: 100%;
+}
+
+footer.footer .footer-upper .phone-content,
+footer.footer .footer-upper .address-content {
+    width: 60rem;
+}
+
+footer.footer .footer-upper .phone-content *,
+footer.footer .footer-upper .address-content * {
+    padding: 1rem;
+}
+
+footer.footer .footer-upper .address-content h6 {
+    line-height: 3.2rem;
+}
+
+footer.footer .footer-upper i {
+    color: var(--ocre);
+    font-size: 3.5rem;
+}
+
+footer.footer .footer-upper h6 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+footer.footer .footer-upper .sponsors-content {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+}
+
+footer.footer .footer-lower {
+    background: var(--ocre);
+    width: 100%;
+}
+
+footer.footer .footer-lower h6 {
+    text-align: center;
+    padding: 2.5rem 0;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+>>>>>>> 3383f6cca6dc4a0e74c37dde4c197fb53eed235d
