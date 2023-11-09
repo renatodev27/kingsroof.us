@@ -3,6 +3,8 @@
 @import "/assets/styles/mainPage/section2.css";
 @import "/assets/styles/mainPage/section3.css";
 @import "/assets/styles/mainPage/section4.css";
+@import "/assets/styles/mainPage/trusted-partners.css";
+@import "/assets/styles/mainPage/footer.css";
 @import "others.css";
 
 :root {
@@ -19,6 +21,7 @@
     --light-blue: #82c0c7;
     --black: #000000;
     --pale: #e5e5e5;
+    --white-purple: #ece5dd;
 }
 
 /* Configuración general */
@@ -52,4 +55,5 @@ div {
 .container {
     max-width: 192rem;
     margin: 0 auto;
+    /* border-right: 2px solid royalblue; */
 }
