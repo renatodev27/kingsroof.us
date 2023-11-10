@@ -1,0 +1,20 @@
+@import "/assets/styles/style.css";
+
+.header-about {
+   padding: 20rem 0 10rem;
+   background-image: linear-gradient(180deg,rgba(21, 3, 23, 0.623) 0%,rgba(0, 0, 0, 0.37) 41%), url(/assets/img/roof-header-A.jpg) !important;
+
+   /* background-image: linear-gradient(180deg,rgba(28, 11, 31, 0.822) 0%,rgba(0, 0, 0, 0.27) 20%), url(/assets/img/roof-header-A.jpg) !important; */
+}
+
+@media (max-width: 767px) {
+   .header-about-tittle {
+      font-size: 4rem !important;
+      line-height: 4.8rem !important;
+   }
+   .header-about-description {
+      line-height: 2.8rem;
+   }
+}
+
+

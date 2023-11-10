@@ -1,3 +1,5 @@
+@import "/assets/styles/style.css";
+
 /*** SERVICES ***/
 
 
@@ -8,63 +10,33 @@
 
 /* ****-------****** HEADER - COMPLEMENT ****-------****** */
 .header.not-home {
-    height: 60rem;
-    background-image: linear-gradient(180deg,rgba(0,0,0, 0.44) 0%,rgba(0,0,0,0.27) 20%), url(/assets/img/roof-header-A.jpg) !important;
+    height: auto;
 }
 
-.header.not-home .header-elements {
-    width: 100%;
-    top: 15.2rem;
-}
-
-.header.not-home .header-elements .header-title-container {
-    position: absolute;
-    top: -2rem;
-    display: flex;
-    height: 100%;
-    width: 100% !important;
-    align-items: center;
-    justify-content: center;
+.header.not-home .others-header-elements {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
     text-align: center;
-} 
+    color: var(--marfil);
+}
 
-.header.not-home .header-elements .header-title-container .left-head-element-title {
+.header.not-home .others-header-elements .others-header-tittle{
     font-size: 6rem;
     line-height: 7rem;
+    font-weight: 500;
 }
 
-.header.not-home .header-elements .header-title-container h6 {
-    color: var(--marfil);
+.header.not-home .others-header-elements .header-about-description{
+    padding-bottom: 3.1rem;
     font-size: 2rem;
     font-weight: 500;
-    line-height: 2.8rem;
-    font-weight: 500;
-    padding: 0 0 3.1rem;
 }
 
-.header.not-home .header-elements .header-title-container .get-btn {
-    border: 1px solid var(--marfil);
-    line-height: 2.72rem;
-    margin: 0;
+.header.not-home .others-header-elements .others-get-btn {
+    margin-top: 0;
 }
 
-.header.not-home .header-filter {
-    background-image: linear-gradient(180deg,rgba(39, 10, 43, 0.753) 0%,rgba(0, 0, 0, 0.27) 30%);
-}
-
-.header.not-home.commercial {
-    background-image:url(/assets/img/commercial-banner.jpg) !important;
-    background-position-y: -4rem;
-    height: 55rem;
-}
-
-.header.not-home.commercial .header-elements .header-title-container {
-    top: 3rem;
-}
-
-.header.not-home.commercial .header-elements .header-title-container .left-head-element-title {
-    margin-top: -5rem !important;
-}
 
 /* ****-------****** PRE FOOTER ****-------****** */
 .pre-footer {
@@ -131,7 +103,6 @@
     margin-bottom: -1rem;
 }
 
-<<<<<<< HEAD
 @media (min-width: 1453px) {
     .logo { /* EDITED */
         position: relative;
@@ -206,7 +177,6 @@
         margin: 0;
     }
 }
-=======
 /* ****-------****** FOOTER ****-------****** */
 footer.footer {
     top: 100%;
@@ -288,4 +258,3 @@ footer.footer .footer-lower h6 {
     font-weight: 500;
 }
 
->>>>>>> 3383f6cca6dc4a0e74c37dde4c197fb53eed235d

@@ -108,10 +108,10 @@
         flex-direction: row !important;
     }
     .contact-btn {
-        width: 13.9rem !important;
+        width: 14.9rem !important;
     }
     .contact-btn a {
-        padding: 1rem 2.3rem !important;
+        /* padding: 1rem 2.3rem !important; */
     }
     .header-elements {
         height: 71.2% !important;
@@ -261,6 +261,10 @@
         top: -2.4rem;
         background-image: linear-gradient(180deg,rgba(47,13,49,0.49) 0%,rgba(47,13,49,0) 100%);
     }
+    .menu.active ul {
+        width: 90% !important;
+        margin: 0 2%;
+    }
 }
 @media (min-width: 319px) and (max-width: 767px) {
     .all-nav {
@@ -271,6 +275,9 @@
     }
     .navbar {
         padding: 2rem 2rem 2rem;
+    }
+    .menu.active ul {
+        left: 0 !important;
     }
 
 }
@@ -406,24 +413,25 @@
     border-radius: 2.5rem;
     font-weight: 500;
     text-align: center;
-    /* padding: 10px 27px; */
-    padding: 1rem 2.7rem;
     cursor: pointer;
     transition: 0.5s;
     margin: 0 1rem;
     line-height: 1.7em;
 }
+.contact-btn:hover {
+    background-color: var(--ocre);
+    color: var(--white);
+}
 .contact-btn a {
     margin: 0;
     text-decoration: none;
     color: var(--dark-purple);
-    padding: 1rem 2.5rem;
     display: inline-block;
     font-size: 16px;
-
+    padding: 1rem 2.7rem;
+    border-radius: 2.5rem;
 }
-.contact-btn:hover {
-    background-color: var(--ocre);
+.contact-btn a:hover {
     color: var(--white);
 }
 .phone {
@@ -498,9 +506,9 @@
     .contact {
         justify-content: end;
         height: 4.7rem;
-        gap: 4.3rem;
+        gap: 1rem;
         margin-left: 2.6rem;
-        padding-right: 4.3rem;
+        /* padding-right: 4.3rem;*/
     }
     .contact> div {
         margin: 0 1rem;
@@ -687,6 +695,7 @@
         margin: 0 auto;
         text-align: center !important;
         height: 35.14%;
+        z-index: 0;
     }
     .header-lion img {
         height: 100% !important;
