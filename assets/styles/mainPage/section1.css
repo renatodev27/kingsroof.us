@@ -11,6 +11,9 @@
 }
 
 /**** Element 1 ****/
+.s1-element1 {
+    margin-bottom: 8rem;
+}
 .s1-e1-boxes {
     display: flex;
     width: 100%;
@@ -56,12 +59,16 @@
 
 @media (max-width: 767px) {
     .s1-element1 {
-        padding: 0;
+        padding: 0 !important;
+        margin-top: 0 !important;
     }
     .box {
         height: 11.2rem;
         padding: 2rem 0 3rem;
         font-size: 2rem;
+    }
+    .box a {
+        padding: 0 5%;
     }
     .box img {
         width: 6rem;
@@ -72,6 +79,7 @@
     .s1-element1 {
         padding: 3rem;
         background-color: var(--purple);
+        margin-top: 10rem;
     }
     .s1-e1-boxes {
         flex-direction: column;
@@ -86,7 +94,6 @@
 .section1-element2 {
     background-color: var(--purple);
     display: flex;
-    margin: 8rem 0;
     align-items: center;
     padding: 8rem;
 }
@@ -107,11 +114,12 @@
     margin: 0;
     padding: 1.5rem 5rem;
     border-radius: 3.5rem;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
     .section1-element2 {
-        padding: 2rem;
+        padding: 2rem !important;
     }
     .section1-element2 p {
         font-size: 3rem;
@@ -123,11 +131,11 @@
         flex-direction: column;
         padding: 3rem;
         align-items: start;
-        margin-bottom: 2.3rem;
+        /* margin-bottom: 2.3rem; */
     }
     .section1-element2 p {
-        font-size: 3.5rem;
-        line-height: 1.1em;
+        /* font-size: 3.3rem;
+        line-height: 1.1em; */
         width: 100%;
     }
     .s1-e2-btn {
@@ -138,11 +146,18 @@
         padding: 1rem 5rem;
     }
 }
+@media (min-width: 768px) and (max-width: 980px) {
+    .section1-element2 p {
+        font-size: 3.5rem;
+        line-height: 1.1em;
+    }
+}
 
 /**** ELEMENT 3 - SERVICES ****/
 .s1-element3-title {
     display: flex;
     align-items: center;
+    margin: 8rem 0 6px;
 }
 .s1-element3-title h2 {
     color: var(--marfil);
@@ -157,9 +172,8 @@
     padding: 0;
 }
 .s1-element3-description {
-    margin-top: 3rem;
     text-align: center;
-    padding: 2.7rem 0;
+    padding: 3rem 0;
 }
 .s1-element3-description h3 {
     color: var(--lavanda);
@@ -177,6 +191,10 @@
 }
 
 @media (max-width: 980px) {
+    .s1-element3-title{
+        padding: 3rem 0;
+        margin-top: 0;
+    }
     .s1-element3-title h2 {
         font-size: 3rem;
     }
@@ -250,6 +268,16 @@
     background: var(--lavanda);
 }
 
+@media (max-width: 479px) {
+    .s1-element4-largeCards, .s1-element4-smallCards {
+        display: flex !important;
+        flex-direction: column;
+        row-gap: 3rem !important;
+    }
+    .s1-element4-smallCards {
+        margin-top: 3rem !important;
+    }
+}
 @media (max-width: 980px) {
     .s1-element4-largeCards, .s1-element4-smallCards {
         display: grid;
@@ -258,7 +286,7 @@
         row-gap: 3%;
     }
     .s1-element4-smallCards {
-        margin-top: 9.6rem !important;
+        margin-top: 9.6rem;
         row-gap: 5%;
     }
     .largeCard, .smallCard {
