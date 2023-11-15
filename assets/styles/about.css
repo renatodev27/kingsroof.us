@@ -105,7 +105,7 @@
    padding: 8rem 0 5.4rem;
 }
 
-.about-s2-container {
+.about-container {
    max-width: 80%;
    margin: 0 auto;
 }
@@ -181,6 +181,7 @@
 /* ///Element 2/// */
 .about-s2-element2 {
    background-color: var(--dark-purple);
+   margin-bottom: 8rem;
 }
 
 .element2-cards {
@@ -193,7 +194,6 @@
       grid-template-columns: repeat(5, 1fr);
    }
 }
-
 @media (max-width: 980px) {
    .element2-cards {
       grid-template-columns: repeat(4, 1fr);
@@ -209,4 +209,101 @@
       grid-template-columns: repeat(2, 1fr);
    }
 }
+
+/* /////SECTION 3///// */
+.about-section3 {
+   padding: 12rem 0;
+}
+
+.about-s3-tittle {
+   padding: 2.7rem 0;
+   text-align: center;
+   color: var(--marfil);
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 6rem;
+}
+
+.about-s3-images {
+   max-width: 180rem;
+   padding: 2.7rem 0;
+   display: flex;
+   flex-direction: row;
+   gap: 3%;
+}
+
+.s3-img-container {
+   width: auto;
+   cursor: pointer;
+}
+
+.about-s3-img {
+   width: 100%;
+}
+
+.about-s3-link {
+   padding: 2.7rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   line-height: 1.7em;
+}
+
+.about-s3-line {
+   width: 17.6%;
+   background-color: var(--lavanda);
+   height: 1px;
+}
+
+.s3-link-text {
+   text-align: center;
+   border: 2px solid var(--lavanda);
+   font-weight: 700;
+   padding: 1.5rem 2.5rem;
+   word-wrap: break-word;
+   font-size: 1.6rem;
+   width: 58.8%;
+   text-decoration: none;
+   color: var(--lavanda);
+}
+
+@media (max-width: 540px) {
+   .about-s3-images {
+      flex-direction: column;
+      padding: 3rem 0;
+      gap: 2rem;
+   }
+}
+@media (max-width: 767px) {
+   .about-s3-tittle {
+      font-size: 4rem;
+      line-height: 1.2em;
+   }
+   
+   .about-s3-link {
+      flex-direction: column;
+      padding: 3rem 0;
+   }
+   .about-s3-line {
+      width: 100%;
+      height: 1px;
+   }
+   .s3-link-text {
+      margin: 3rem 0;
+      width: 100%;
+   }
+}
+@media (max-width: 980px) {
+   .about-s3-tittle {
+      padding: 3rem 0;
+   }
+
+   
+}
+
+
+
+
+
+
 
