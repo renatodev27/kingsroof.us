@@ -6,6 +6,7 @@
 @import "/assets/styles/mainPage/trusted-partners.css";
 @import "/assets/styles/mainPage/footer.css";
 @import "others.css";
+@import "about.css";
 
 :root {
     --ocre: #b58b35;
