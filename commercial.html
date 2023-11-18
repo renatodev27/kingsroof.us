@@ -14,25 +14,31 @@
 </head>
 <body class="container">
     <!--****************HEADER****************-->
-    <header class="header not-home commercial">
-        <div class="header-topLine"></div>
-        <div class="header-filter"></div>
-        <div class="all-nav">      
-            <div class="navbar">
-                <nav class="menu">
-                    <a class="logo" href="/">
-                        <img src="assets/logos/logo-whit.svg" alt="">
-                    </a>
-                    <ul>
-                        <li class="nav-link"><a href="/">Home</a></li>
-                        <li class="nav-link"><a href="about.html">About Us</a></li>
-                        <li class="nav-link"><a href="">Services</a></li>
-                        <li class="nav-link"><a href="projects.html">Projects</a></li>
-                        <li class="nav-link"><a href="multifamily.html">Multi family</a></li>
-                        <li class="nav-link nav-link-active"><a href="commercial.html">Comercial</a></li>
-                        <li class="nav-link"><a href="testimonial.html">Testimonial</a></li>
-                    </ul>
-                </nav>
+    <header class="header not-home header-commercial">
+        <div class="all-nav others-all-nav all-nav-about">      
+            <div class="navbar">    
+                <a class="logo" href="/">
+                    <img decoding="async" loading="lazy" decoding="async" src="/assets/logos/logo-whit.svg" alt="">
+                </a>
+    
+                <div class="menu-container">
+                    <div class="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="nav-link" ><a href="/">Home</a></li>
+                            <li class="nav-link"><a href="./about.html">About Us</a></li>
+                            <li class="nav-link"><a href="https://kingroof.us/services/">Services</a></li>
+                            <li class="nav-link"><a href="./projects.html">Projects</a></li>
+                            <li class="nav-link"><a href="./multifamily.html">Multi family</a></li>
+                            <li class="nav-link nav-link-active"><a href="./commercial.html">Commercial</a></li>
+                            <li class="nav-link"><a href="./testimonial.html">Testimonial</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
             <div class="contact">
@@ -51,13 +57,12 @@
             </div>
         </div>
 
-        <div class="header-elements">
-            <div class="header-title-container">
-                <div>
-                    <h2 class="left-head-element-title">COMMERCIAL</h2>
-                    <h6>Welcome to our King Roof commercial company.</h6>
-                </div>
-            </div>
+        <div class="others-header-elements header-about-elements about-container">
+            <h2 class="others-header-tittle header-about-tittle">COMMERCIAL</h2>
+            <h6 class="others-header-description header-about-description">Welcome to our King Roof commercial company.</h6>
+            <a href="https://kingroof.us/contact-us/">
+                <button class="get-btn others-get-btn">Get a free quote</button>
+            </a>
         </div>
     </header>
 
@@ -69,28 +74,66 @@
     </section>
     <!------------------ FIN SECTION ONE------------------>
 
-    <!--****************SECTION 1****************-->
-    <footer class="footer">
-        <div class="footer-upper">
-            <div class="logo-content">
-                <img src="assets/logos/logo-whit.svg" width="130" height="150">
-            </div>
-            <div class="phone-content">
-                <i class="fas fa-headset"></i>
-                <h6>678-644-5941</h6>
-            </div>
-            <div class="address-content">
-                <i class="fas fa-map-marker-alt"></i>
-                <h6>1165 Northchase Pkwy SE. Suite 305 Marietta, GA. 30067</h6>
-            </div>
-            <div class="sponsors-content">
-                <img src="assets/img/king-roof-renovations.png" width="100" height="100">
-            </div>
+<!--****************TRUSTED PARTNERS****************-->
+<section class="trusted-partners">
+    <div class="trusted-partners-content">
+        <p>TRUSTED PARTNERS</p>
+        <div class="trusted-partners-logos">
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
         </div>
-        <div class="footer-lower">
-            <h6>COPYRIGHT 2023 KING ROOF – ALL RIGHTS RESERVED</h6>
+    </div>
+</section>
+<!------------------ FIN TRUSTED PARTNERS------------------>
+
+<!--****************PRE FOOTER****************-->
+<section class="pre-footer">
+    <div class="pre-footer-background"></div>
+    <div class="pre-footer-context">
+        <div class="logo-pre-footer-container">
+            <div class="logo-pre-footer"></div>
         </div>
-    </footer>
-    <!------------------ FIN SECTION ONE------------------>
+        <div class="pre-footer-title">
+            <h1>GET YOUR ROOF COVERED BY INSURANCE</h1>
+        </div>
+        <div class="pre-footer-description">
+            <h6>Many of our clients have full or partial insurance coverage to 
+                completely replace their roof. We are experts at navigating the 
+                coverage and claims process.
+            </h6>
+            <a href="/" class="get-btn">Get a free quote</a>
+        </div>
+    </div>
+</section>
+<!--****************FIN PRE FOOTER****************-->
+
+<!--****************FOOTER****************-->
+<footer class="footer">
+    <div class="footer-upper">
+        <div class="logo-content">
+            <img src="assets/logos/logo-whit.svg" width="130" height="150">
+        </div>
+        <div class="phone-content">
+            <i class="fas fa-headset"></i>
+            <h6>678-644-5941</h6>
+        </div>
+        <div class="address-content">
+            <i class="fas fa-map-marker-alt"></i>
+            <h6>1165 Northchase Pkwy SE. Suite 305 Marietta, GA. 30067</h6>
+        </div>
+        <div class="sponsors-content">
+            <img src="assets/img/king-roof-renovations.png" width="100" height="100">
+        </div>
+    </div>
+    <div class="footer-lower">
+        <h6>COPYRIGHT 2023 KING ROOF – ALL RIGHTS RESERVED</h6>
+    </div>
+</footer>
+<!------------------ FIN FOOTER------------------>
 </body>
 </html>
