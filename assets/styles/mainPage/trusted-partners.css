@@ -5,24 +5,19 @@
     background-color: var(--white-purple);
 }
 
-.trusted-partners h1 {
+.trusted-partners p {
     color: var(--dark-purple);
     font-size: 100px;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 5rem;
 }
 
 .trusted-partners .trusted-partners-logos {
-    display: flex;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin-top: 8rem;
-    margin-right: auto;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .trusted-partners .trusted-partners-logos .container {
@@ -31,8 +26,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .trusted-partners-content {
@@ -47,3 +42,33 @@
 .trusted-partners .trusted-partners-logos .container:nth-child(5) { background-image: url('../../img/partners/05-certainted.png') }
 .trusted-partners .trusted-partners-logos .container:nth-child(6) { background-image: url('../../img/partners/06-owens.png') }
 .trusted-partners .trusted-partners-logos .container:last-child { background-image: url('../../img/partners/07-gaf.png') }
+
+@media only screen and (max-width: 767px) {
+    .trusted-partners p {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .trusted-partners .trusted-partners-logos {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .trusted-partners p {
+        font-size: 5rem;
+    }
+
+    .trusted-partners .trusted-partners-logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1126px) {
+    .trusted-partners p {
+        width: 50%;
+        margin: 3rem auto;
+        line-height: 10rem;
+    }
+}
+

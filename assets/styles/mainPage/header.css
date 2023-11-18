@@ -567,7 +567,7 @@
 .get-btn {
     margin-top: 3.1rem;
     background: none;
-    border: 2px solid var(--marfil);
+    border: 1px solid var(--marfil);
     color: var(--marfil);
     font-size: 16px;
     border-radius: 2.5rem;
@@ -579,6 +579,7 @@
     transition: all 300ms ease 0ms;
     position: relative;
     display: inline-block;
+    text-decoration: none;
   
 }
 .get-btn:hover {
