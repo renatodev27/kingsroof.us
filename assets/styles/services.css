@@ -1,0 +1,127 @@
+@import "../style.css";
+
+
+.header-services {
+    position: relative;
+    padding-top: 25rem;
+    padding-bottom: 20rem;
+    background: linear-gradient(180deg,rgb(27 3 28 / 72%) 4%,rgb(0 0 0 / 36%) 33%), url('/assets/img/services/Imagen-1.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.play-button {
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 9.6rem;
+    height: 9.6rem;
+    background: url(/assets/icons/circle-play-regular.svg) center/cover no-repeat;
+    cursor: pointer;
+}
+
+.play-btn-container {
+    width: 80%;
+    max-width: 108rem;
+    margin: 0 auto;
+    padding: 2.7rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: saturate(180%) blur(5px);
+    background: rgba(0,0,0,.55);
+    transition: backdrop-filter 1s 1s;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: relative;
+    display: flex;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 88.53%;
+    max-width: 100vw;
+    min-width: 32rem;
+    height: 89.5%;
+    max-height: 100vh;
+    pointer-events: none;
+    box-shadow: 0 3px 10px -1px rgba(0,0,0,.3), 0 2px 50px 2px rgba(0,0,0,.2);
+    overflow: auto;
+    margin: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--pale-silver);
+    cursor: pointer;
+    /* font-size: 16px; */
+    font-weight: bold;
+    /* text-decoration: underline; */
+    transition: opacity .6s .3s;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+
+}
+
+.close {
+    text-shadow: 0 0 1px #000, 0 0 3px #000a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 30px;
+    opacity: .7;
+    pointer-events: all;
+    transition: all .3s;
+}
+
+.close:hover {
+    color: var(--white);
+    transform: scale(1.1);
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.player-container {
+    width: 100%;
+    height: 100%;
+    padding: 2.7rem 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-frame {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;  
+}
+
+@media (max-width: 980px) {
+    .video-overlay {
+        width: 100%;
+    }
+    .player-container {
+        padding: 3rem 0;
+        margin: 0 10.1%;
+    }
+}
