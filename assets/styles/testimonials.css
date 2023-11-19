@@ -1,0 +1,108 @@
+@import "/assets/styles/style.css";
+
+section.tsml-section1 {
+    background-color: var(--ocre);
+}
+
+div.tsml-section1-content {
+    text-align: center; 
+    width: 100%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+div.tsml-section1-content h1 {
+    color: var(--white);
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.tsml-section2 div.tsml-section2-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-left,
+section.tsml-section2 div.tsml-section2-content .tsml-right {
+    width: 50%;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-left .tsml-image-content {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-left .tsml-image-content .image-container {
+    position: relative;
+    width: 80% !important;
+    height: 100%;
+}
+section.tsml-section2 div.tsml-section2-content .tsml-left .tsml-image-content .image-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer {
+    background-color: transparent !important;
+    width: 75% !important;
+    padding: 0 0 0 2rem;
+    margin: 0;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer p {
+    color: var(--white);
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .stars,
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .comment-author {
+    color: var(--ocre);
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .comment-author {
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .pagination {
+    position: relative;
+}
+
+section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .pagination .dot.active {
+    background-color: var(--ocre) !important;
+}
+
+@media only screen and (min-width: 980px) {
+    section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer .pagination {
+        top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    section.tsml-section2 div.tsml-section2-content {
+        display: block !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.tsml-section2 div.tsml-section2-content .tsml-left,
+    section.tsml-section2 div.tsml-section2-content .tsml-right {
+        width: 100%;
+    }
+
+    section.tsml-section2 div.tsml-section2-content .tsml-left .tsml-image-content {
+        justify-content: center;
+    }
+
+    section.tsml-section2 div.tsml-section2-content .tsml-right .s4-commentContainer {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+}
