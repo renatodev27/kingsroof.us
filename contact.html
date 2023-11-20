@@ -73,18 +73,79 @@
 <!--****************FIN HEADER****************-->
 
 <!--****************SECTION 1****************-->
-<section class="section1">
+<section class="contact-section1">
+    <div class="contact-elements">
+        <div class="formulary">
+            <div class="form-title">
+                <h2>GET IN TOUCH!</h2>
+            </div>
+            <form action="/contact.html/" method="post" enctype="multipart/form-data" class="form">
+                <input type="text" id="nombre" name="nombre" required placeholder="Name">
 
+                <input type="tel" id="phone" name="phone" required placeholder="Best number we reach you at">
+
+                <input type="text" id="ciudad" name="ciudad" required placeholder="City">
+
+                <input type="number" id="zipcode" name="zipcode" required placeholder="Zip code">
+
+                <input type="email" id="email" name="email" required placeholder="Email" class="email">
+
+                <input type="text" id="servicio" name="servicio" required placeholder="Services required" class="form-services">
+
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Message" rows="10" cols="50" style="height: 28.8rem;"></textarea>
+
+                <!-- Aquí puedes agregar un campo de captcha. Asegúrate de tener la implementación correspondiente. -->
+                
+                <label for="captcha" id="captcha">Captcha</label>
+                <!-- <input type="text" id="captcha" name="captcha" required> -->
+            </form>
+            <div class="form-btn">
+                <input type="submit" value="SEND MESSAGE" id="submit"></input>
+            </div>
+        </div>
+        <div class="contact-image-container">
+            <div class="contact-image">
+                <img decoding="async" src="/assets/img/Recurso-4.svg" alt="">
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-title">
+                <h2>CONTACT INFO</h2>
+            </div>
+            <div class="info-subtitle">
+                <p>GENERAL INQUIRIES</p>
+            </div>
+            <div class="contact-number">
+                <a class="contact-link" href="tel:6786445941">
+                    <i class="fas fa-phone-volume"></i>
+                    <span class="contact-icon">678-644-5941
+                    </span>
+                </a>
+            </div>
+            <div class="info-subtitle office">
+                <p>OFFICE HOURS</p>
+            </div>
+            <div class="adress">
+                <p>1165 Northchase Pkwy SE. Unit 305 Marietta, GA. 30067</p>
+            </div>
+            <div class="hour">
+                <p>Monday – Friday 8:00 – 5:00</p>
+            </div>
+            <div class="hour">
+                <p>Saturday 9:00 – 5:00</p>
+            </div>
+        </div>
+    </div>
 </section>
-<!------------------ FIN SECTION ONE------------------>
+<!--------------- FIN SECTION 1--------------->
 
 <!--****************FIN HEADER****************-->
 
-<!--****************SECTION 1****************-->
+<!--****************SECTION MAP****************-->
 <section class="cnt-section-map">
     <div id="map"></div>
 </section>
-<!------------------ FIN SECTION ONE------------------>
+<!------------------ FIN SECTION MAP------------------>
 
 <!--****************TRUSTED PARTNERS****************-->
 <section class="trusted-partners">
@@ -151,5 +212,6 @@
 <script src="assets/js/fontawesome.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp?key=AIzaSyCy08XS0JAJuunqo94uTsovXCuKryL3Z5I"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/contact-form.js"></script>
 </body>
 </html>
