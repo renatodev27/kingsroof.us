@@ -12,6 +12,7 @@
 @import "multifamily.css";
 @import "commercial.css";
 @import "projects.css";
+@import "contact.css";
 
 :root {
     --ocre: #b58b35;
