@@ -1,0 +1,218 @@
+@import "./style.css";
+
+section.prj-section1 div.prj-section1-content {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+section.prj-section1 div.prj-section1-content .prj-header h1 {
+    color: var(--lavanda);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 2.72rem;
+}
+
+section.prj-section1 div.prj-section1-content .get-btn.purple-btn {
+    border-color: var(--lavanda);
+    color: var(--lavanda);
+    padding: 0.48rem 3.5rem;
+}
+
+section.prj-section1 div.prj-section1-content .get-btn.purple-btn:hover {
+    color: var(--dark-purple) !important;
+    cursor: pointer;
+    background-color: var(--lavanda);
+    border: 1px solid var(--lavanda);
+}
+
+section.prj-section1 div.prj-section1-content .prj-options {
+    margin-top: 5rem;
+}
+
+section.prj-section1 div.prj-section1-content .prj-options h1 {
+    color: var(--marfil);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7.2rem;
+}
+
+section.prj-section1 div.prj-section1-content .prj-options .options-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    margin: 0 auto;
+}
+
+section.prj-section2 {
+    background-color: var(--white);
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-images-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+    top: -5rem;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-roofting-content,
+section.prj-section2 div.prj-section2-content .prj-s2-images-content,
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content,
+section.prj-section2 div.prj-section2-content .prj-s2-painting-content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-images-content .prj-s2-image-container {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-images-content .prj-s2-image-container:hover .prj-s2-img-overlay {
+    z-index: 3;
+    opacity: 1;
+    transition: all .5s; /*revisar transicion*/
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-images-content .prj-s2-image-container .prj-s2-img-overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: hsla(0,0%,100%,.9);
+    pointer-events: none;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-images-content .prj-s2-image-container .prj-s2-img-overlay::before {
+    content: url(/assets/icons/icons8-plus-30.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-roofting-content,
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content,
+section.prj-section2 div.prj-section2-content .prj-s2-painting-content {
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-roofting-content h4,
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content h4,
+section.prj-section2 div.prj-section2-content .prj-s2-painting-content h4 {
+    color: var(--dark-purple);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding-bottom: 4rem;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images img,
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper .prj-s2-image-container img,
+section.prj-section2 div.prj-section2-content .prj-s2-painting-content .prj-s2-image-container img{
+    width: 100%;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper .prj-s2-image-container {
+    padding-bottom: 0.5rem;
+}
+section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+section.prj-section2 div.prj-section2-content .prj-s2-painting-content .prj-s2-painting-images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 7rem;
+}
+
+@media only screen and (max-width: 980px) {
+    section.prj-section2 div.prj-section2-content .prj-s2-images-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section.prj-section1 div.prj-section1-content .prj-options .options-content {
+        display: block;
+        text-align: center;
+        width: 90%;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    section.prj-section2 div.prj-section2-content .prj-s2-images-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images .prj-s2-image-container:nth-child(2) {
+        grid-row: 1;
+        position: absolute;
+        width: 50%;
+        max-width: 45.5%;
+    }
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images .prj-s2-image-container:nth-child(1) {
+        grid-column: 2;
+    }
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images .prj-s2-image-container:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images .prj-s2-image-container:nth-child(2) {
+        grid-row: 1;
+        position: absolute;
+        width: 50%;
+        max-width: 44.2%;
+    }
+
+    section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper .prj-s2-renovation-images-content:nth-child(4) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section.prj-section2 div.prj-section2-content .prj-s2-images-content,
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images,
+    section.prj-section2 div.prj-section2-content .prj-s2-painting-content .prj-s2-painting-images,
+    section.prj-section2 div.prj-section2-content .prj-s2-renovation-content .prj-s2-renovation-images-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    section.prj-section2 div.prj-section2-content .prj-s2-roofting-content .prj-s2-roofting-images .prj-s2-image-container:nth-child(2) {
+        position: relative;
+        width: 100%;
+    }
+}
