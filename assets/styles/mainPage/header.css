@@ -83,7 +83,7 @@
         border-top: 0.1px solid #5A4925;
     }
 }
-@media (min-width: 981px) and (max-width: 1320px) {
+@media (min-width: 981px){
     .header {
         height: 66.5rem;
     }
@@ -726,7 +726,4 @@
         padding-right: 1rem !important;
         margin-bottom: 2rem;
     }
-}
-@media (max-width: 358px) {
-
 }

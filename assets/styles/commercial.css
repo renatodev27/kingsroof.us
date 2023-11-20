@@ -16,7 +16,7 @@ section.comm-section1 div.comm-section1-content {
 
 section.comm-section1 div.comm-section1-content .content-container {
     display: flex;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     align-items: center;
 }
@@ -36,9 +36,9 @@ section.comm-section1 div.comm-section1-content .content-container .image-contai
 }
 
 section.comm-section1 div.comm-section1-content .content-container .description-container .title h1 {
-    font-size: 2.65rem;
-    font-weight: 100;
-    line-height: 3.2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4rem;
     padding-bottom: 1rem;
     color: var(--dark-purple);
 }
