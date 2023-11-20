@@ -1,0 +1,5 @@
+@import "./style.css";
+
+.cnt-section-map #map {
+    height: 40rem;
+}
