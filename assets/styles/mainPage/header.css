@@ -307,7 +307,7 @@
     .menu ul {
         flex-direction: column;
         display: none;
-        width: 90%;
+        width: 95%;
         height: 0;
         overflow: hidden;
         align-items: center;

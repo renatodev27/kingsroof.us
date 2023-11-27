@@ -1,22 +1,26 @@
 $(document).ready( function () {
 
+    $(".owl-carousel").owlCarousel({
+        items: 1, 
+        loop: true,
+        margin: 10,
+        nav: true, 
+        smartSpeed: 1000,
+        navText : ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+    });
+
     $('.menu-toggle').click( function () {
         if ($('.menu').hasClass('active')) {
-
-            $('.menu ul').slideDown("fast");
-            $('.menu li').slideDown("fast");
-            //$('.menu').animate({opacity: 0},200);
+            $('.menu ul').slideUp(350);
+            $('.menu li').slideUp(350);
             $('.menu').removeClass('active');
         }
         else {
-            $('.menu ul').slideUp("fast");
-            $('.menu li').slideUp("fast");
-            //$('.menu').animate({opacity: 1},200);
+            $('.menu ul').slideDown(350);
+            $('.menu li').slideDown(350);
             $('.menu').addClass('active');
         }
-        //$('.menu').toggleClass('active', 500);
     })
-
 })
 
 /* document.addEventListener("DOMContentLoaded", function () {
@@ -28,7 +32,7 @@ $(document).ready( function () {
     });
 }); */
 
-/* document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const playButton = document.getElementById('play-button');
     const videoContainer = document.getElementById('video-container');
     const videoOverlay = document.getElementById('video-overlay');
@@ -46,4 +50,4 @@ $(document).ready( function () {
     closeButton.addEventListener('click', function () {
         videoContainer.style.display = 'none';
     });
-}); */
+});
