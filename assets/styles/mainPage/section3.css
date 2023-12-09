@@ -50,32 +50,40 @@
     max-width: 100%;
     height: auto;
 }
+.s3-images-2 {
+    width: 0;
+}
 .s3-images {
+    width: 58.8%;
+}
+.s3-images, .s3-images-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 58.8%;;
 }
-.explore-img {
+.explore-img-2 {
+    opacity: 0;
+}
+.explore-img, .explore-img-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
     align-content: center;
     transition: height .2s ease-in-out;
 }
-.explore-img img {
+.explore-img img, .explore-img-2 img {
     width: 100%;
     height: 100%;
 }
-.explore-img > div {
+.explore-img > div, .explore-img-2 > div {
     position: relative;
 }
 .s3-img-overlay {
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
     display: block;
+    opacity: 0;
     width: 100%;
     height: 100%;
     background: hsla(0,0%,100%,.9);
@@ -83,7 +91,7 @@
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
 }
-.explore-img > div:hover .s3-img-overlay {
+.explore-img > div:hover .s3-img-overlay, .explore-img-2 > div:hover .s3-img-overlay {
     z-index: 3;
     opacity: 1;
     transition: all .5s; /*revisar transicion*/
@@ -96,20 +104,23 @@
     transform: translate(-50%, -50%);
     font-size: 32px;
 }
-.s3-explore-pages {
+.s3-explore-pages-2 {
+    display: none;
+}
+.s3-explore-pages, .s3-explore-pages-2 {
     border-top: 2px solid var(--marfil);
     margin-top: 3.8rem;
     text-align: end;
     padding: 1rem;
 }
-.s3-explore-pages  span {
+.s3-explore-pages span, .s3-explore-pages-2 span {
     color: var(--grey);
     font-weight: 500;
     line-height: 1.6rem;
     padding-left: 2rem;
     cursor: pointer;
 }
-.s3-explore-pages .active {
+.s3-explore-pages .active, .s3-explore-pages-2 .active {
     color: var(--light-blue);
 }
 .s3-hover:hover {
@@ -140,36 +151,36 @@
     .s3-explore-img {
         text-align: center;
     }
-    .s3-images {
+    .s3-images, .s3-images-2 {
         width: 100%;
         padding-top: 18rem;
     }
-    .s3-explore-pages {
+    .s3-explore-pages, .s3-explore-pages-2 {
         border-top: 1px solid var(--marfil);
     }
 }
 
 @media (max-width: 479px) {
 
-    .explore-img {
+    .explore-img, .explore-img-2 {
         display: flex;
         flex-direction: column;
         gap: normal;
     }
-    .explore-img > div {
+    .explore-img > div, .explore-img-2 > div {
         /* position: relative; */
         margin-bottom: 3rem;
     }
-    .explore-img img {
+    .explore-img img, .explore-img-2 img {
         height: 100%;
     }
-    .s3-explore-pages {
+    .s3-explore-pages, .s3-explore-pages-2 {
         margin-top: 0;
         border-top: 1px solid var(--marfil);
     }
 }
 @media (min-width: 768px) and (max-width: 980px) {
-    .explore-img {
+    .explore-img, .explore-img-2 {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.5rem;
     }
