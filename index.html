@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/57bcf11013.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/styles/lightgallery-bundle.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,50 +265,68 @@
 <!--***************SECTION 3*************-->
     <div class="section3 container">
         <div class="s3-explore">
-                    <h3 class="explore-title">Explore Recent
-                        Projects</h3>
-                    <a href="./projects.html">
-                        <button>View all projects</button>
-                    </a>
-                    <div class="s3-explore-img">
-                        <img decoding="async" src="/assets/img/Grupo-513.png" alt="">
-                    </div>
+            <h3 class="explore-title">Explore Recent
+                Projects</h3>
+            <a href="./projects.html">
+                <button>View all projects</button>
+            </a>
+            <div class="s3-explore-img">
+                <img decoding="async" src="/assets/img/Grupo-513.png" alt="">
+            </div>
         </div>
         <div class="s3-images">
-                    <div class="explore-img">               
-                        <div>
-                            <a href="https://kingroof.us/wp-content/uploads/2022/06/g02.jpg" title="g02">
-                                <img decoding="async" class="s3-hover" src="/assets/img/g02-400x284.jpg" alt="">
-                                <span class="s3-img-overlay"></span>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="">
-                                <img decoding="async" class="s3-hover" src="/assets/img/g03-400x284.jpg" alt="">
-                                <span class="s3-img-overlay"></span>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="">
-                                <img decoding="async" class="s3-hover" src="/assets/img/g01-400x284.jpg" alt="">
-                                <span class="s3-img-overlay"></span>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="">
-                                <img decoding="async" class="s3-hover" src="/assets/img/g02.jpeg" alt="">
-                                <span class="s3-img-overlay"></span>
-                            </a>
-                        </div>  
-                    </div>
-                    <div class="s3-explore-pages">
-                        <span class="active">1</span>
-                        <span>2</span>
-                        <span>Next</span>
-                    </div>
+            <div class="explore-img" id="animated-thumbnails">               
+                <div data-src="assets/img/g01.jpg">
+                    <a href="assets/img/g01.jpg" title="g02">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g01-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a>
+                </div>
+                <div data-src="assets/img/g03.jpg">
+                    <a href="assets/img/g03.jpg">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g03-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a> 
+                </div>
+                <div data-src="assets/img/g02.jpg">
+                    <a href="assets/img/g02.jpg">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g02-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a>
+                </div>
+                <div data-src="assets/img/g04.jpg">
+                    <a href="assets/img/g04.jpg">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g04-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a>  
+                </div>
+            </div>
+            <div class="s3-explore-pages">
+                <span class="active">1</span>
+                <span id="next">2</span>
+                <span id="next">Next</span>
+            </div>
+        </div>
+        <div class="s3-images-2">
+            <div class="explore-img-2" id="animated-thumbnails">       
+                <div data-src="assets/img/g05.jpg">
+                    <a href="assets/img/g05.jpg" title="g02">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g05-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a>
+                </div>
+                <div data-src="assets/img/g06.jpg">
+                    <a href="assets/img/g06.jpg">
+                        <img decoding="async" class="s3-hover" src="/assets/img/g06-400x284.jpg" alt="">
+                        <span class="s3-img-overlay"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="s3-explore-pages-2">
+                <span id="prev">Prev</span>
+                <span id="prev">1</span>
+                <span class="active">2</span>
+            </div>
         </div>
     </div>
 <!---------------FIN SECTION 3---------------->
@@ -429,6 +448,7 @@
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/fontawesome.js"></script>
+<script src="assets/js/lightgallery.umd.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

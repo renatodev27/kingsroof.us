@@ -6,7 +6,7 @@ $(document).ready( function () {
         margin: 10,
         nav: true, 
         smartSpeed: 1000,
-        navText : ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+        navText: ['<img src="../assets/icons/left-arrow.png">', '<img src="./assets/icons/right-arrow.png">']
     });
 
     $('.menu-toggle').click( function () {
@@ -21,16 +21,42 @@ $(document).ready( function () {
             $('.menu').addClass('active');
         }
     })
-})
+    
+    $('[id=next]').click( function() {
+        $('.explore-img').animate({
+            opacity: 0, 
+            position: 'absolute',
+        })
+        $('.explore-img-2').animate({
+            opacity: 1,
+            position: 'relative',
+        })
 
-/* document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
+        $('.s3-explore-pages-2').css('display', 'block'); 
+        $('.s3-explore-pages').css('display', 'none'); 
 
-    menuToggle.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
-}); */
+        $('.s3-images-2').css('width', '58.8%');
+        $('.s3-images').css('width', 0);
+    })
+
+    $('[id=prev]').click( function() { 
+        $('.s3-explore-pages-2').css('display', 'none'); 
+        $('.s3-explore-pages').css('display', 'block'); 
+
+        $('.s3-images').css('width', '58.8%');
+        $('.s3-images-2').css('width', 0);
+
+        $('.explore-img').animate({
+            opacity: 1,
+            position: 'relative'
+        })
+        $('.explore-img-2').animate({
+            opacity: 0,
+            position: 'absolute',
+        })
+    })
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const playButton = document.getElementById('play-button');
@@ -51,3 +77,35 @@ document.addEventListener('DOMContentLoaded', function () {
         videoContainer.style.display = 'none';
     });
 });
+
+lightGallery(document.querySelector('[id="animated-thumbnails"]'), {
+    speed: 500,
+    mode: 'lg-slide',
+    thumbnail: true,
+    selector: 'a',
+    download: false
+});
+
+lightGallery(document.getElementById('lightgallery-roofting'), {
+    speed: 500,
+    mode: 'lg-slide',
+    thumbnail: true,
+    selector: 'a',
+    download: false
+})
+
+lightGallery(document.getElementById('lightgallery-renovation'), {
+    speed: 500,
+    mode: 'lg-slide',
+    thumbnail: true,
+    selector: 'a',
+    download: false
+})
+
+lightGallery(document.getElementById('lightgallery-painting'), {
+    speed: 500,
+    mode: 'lg-slide',
+    thumbnail: true,
+    selector: 'a',
+    download: false
+})
