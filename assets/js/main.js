@@ -86,6 +86,14 @@ lightGallery(document.querySelector('[id="animated-thumbnails"]'), {
     download: false
 });
 
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    mode: 'lg-slide',
+    thumbnail: true,
+    selector: 'a',
+    download: false
+});
+
 lightGallery(document.getElementById('lightgallery-roofting'), {
     speed: 500,
     mode: 'lg-slide',
